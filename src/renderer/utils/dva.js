@@ -7,8 +7,7 @@ export { connect };
 export default function (options) {
   const app = create(options);
   // HMR workaround
-  if (!global.registered) options.models.forEach(model => app.model(model));
-  global.registered = true;
+  options.models.forEach(model => app.model(model));
 
   app.start();
   // eslint-disable-next-line no-underscore-dangle

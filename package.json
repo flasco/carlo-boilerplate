@@ -6,25 +6,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node main.js",
-    "dev:render": "cross-env NODE_ENV=dev node scripts/dev-render.js",
+    "start": "cross-env NODE_ENV=dev node main.js",
+    "dev:render": "node scripts/dev-koa.js",
     "build:render": "node scripts/build-render.js",
     "pre": "yarn build:render"
-  },
-  "build": {
-    "appId": "com.flasco.test.app",
-    "mac": {
-      "target": [
-        "dmg",
-        "zip"
-      ]
-    },
-    "win": {
-      "target": [
-        "nsis",
-        "zip"
-      ]
-    }
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -63,6 +48,9 @@
     "file-loader": "^2.0.0",
     "husky": "^1.1.2",
     "is-electron-renderer": "^2.0.1",
+    "koa": "^2.6.1",
+    "koa-webpack": "^5.1.1",
+    "koa2-cors": "^2.0.6",
     "lint-staged": "^7.3.0",
     "mini-css-extract-plugin": "^0.4.4",
     "minimist": "^1.2.0",
@@ -77,7 +65,7 @@
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0",
-    "uglifyjs-webpack-plugin": "^2.0.1",
+    "terser-webpack-plugin": "^1.1.0",
     "url-loader": "^1.1.2",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",

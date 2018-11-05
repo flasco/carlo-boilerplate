@@ -15,7 +15,7 @@ function fileExists(path) {
 }
 
 exports.checkMainfest = () => {
-  const filePath = path.resolve(__dirname, '../dist/vendor-manifest.json');
+  const filePath = path.resolve(__dirname, '../static/dist/vendor-manifest.json');
   return fileExists(filePath);
 };
 

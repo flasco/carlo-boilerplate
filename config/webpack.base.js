@@ -4,6 +4,11 @@ const path = require('path');
 const config = {
   module: {
     rules: [
+      // 原生node
+      {
+        test: /\.node$/,
+        use: 'node-loader'
+      },
       // WOFF Font
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
@@ -60,7 +65,7 @@ const config = {
       }
     ]
   },
-  target: 'electron-renderer',
+  target: 'web',
   node: {
     __dirname: false,
     __filename: false
@@ -68,7 +73,7 @@ const config = {
   plugins: [
     new webpack.DllReferencePlugin({
       context: __dirname,
-      manifest: path.join(__dirname, '../dist/vendor-manifest.json')
+      manifest: path.join(__dirname, '../static/dist/vendor-manifest.json')
     })
   ]
 };

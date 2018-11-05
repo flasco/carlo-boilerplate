@@ -4,7 +4,7 @@ const path = require('path');
 (async () => {
   const app = await carlo.launch(
     {
-      bgcolor: '#2b2e3b',
+      bgcolor: '#ffffff',
       width: 800,
       height: 600,
       args: process.env.DEV === 'true' ? ['--auto-open-devtools-for-tabs'] : [],
@@ -18,7 +18,7 @@ const path = require('path');
 
   // Expose 'env' function in the web environment.
   // eslint-disable-next-line no-unused-vars
-  await app.exposeFunction('env', _ => process.env);
+  await app.exposeFunction('_envFunc', _ => process.env);
 
   // Navigate to the main page of your app.
   await app.load('index.html');

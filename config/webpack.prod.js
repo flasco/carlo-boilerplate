@@ -1,7 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const Uglifyjs = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 const merge = require('webpack-merge');
 
@@ -57,11 +57,7 @@ module.exports = merge.smart(baseConfig, {
   optimization: {
     minimizer: [
       new OptimizeCSSAssetsPlugin({}),
-      new Uglifyjs({
-        uglifyOptions: {
-          compress: false
-        }
-      })
+      new TerserPlugin()
     ]
   }
 });
