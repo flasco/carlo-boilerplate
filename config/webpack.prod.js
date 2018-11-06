@@ -13,10 +13,10 @@ module.exports = merge.smart(baseConfig, {
   plugins: [
     new CleanWebpackPlugin(['dist/css/*.*', 'dist/js/*.*'], {
       verbose: false,
-      root: path.resolve(__dirname, '../')
+      root: path.resolve(__dirname, '../static')
     }),
     new MiniCssExtractPlugin({
-      filename: '/css/[name].css'
+      filename: 'css/[name].css'
     })
   ],
   module: {
@@ -50,9 +50,9 @@ module.exports = merge.smart(baseConfig, {
     ]
   },
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, '../static/dist'),
     filename: 'js/bundle.js',
-    publicPath: '../dist/'
+    publicPath: './dist/'
   },
   optimization: {
     minimizer: [

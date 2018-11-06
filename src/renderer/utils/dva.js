@@ -6,7 +6,7 @@ export { connect };
 
 export default function (options) {
   const app = create(options);
-  // HMR workaround
+
   options.models.forEach(model => app.model(model));
 
   app.start();
