@@ -3,33 +3,37 @@ const path = require('path');
 const ora = require('ora');
 const webpack = require('webpack');
 const dllConfig = require('../config/webpack.dll');
+const { STATIC_PATH } = require('../config/base');
 /**
- * @param {string} path asd
+ * @param {string} filePath asd
  */
-function fileExists(path) {
+function fileExists(filePath) {
   return new Promise((resolve) => {
-    fs.exists(path, (existFlag) => {
+    fs.exists(filePath, (existFlag) => {
       resolve(existFlag);
     });
   });
 }
 
 exports.checkMainfest = () => {
-  const filePath = path.resolve(__dirname, '../static/dist/vendor-manifest.json');
+  const filePath = path.resolve(
+    __dirname,
+    `${STATIC_PATH}/vendor-manifest.json`
+  );
   return fileExists(filePath);
 };
 
 exports.dllComplier = () => {
   return new Promise((resolve) => {
-    const spinner_dll = ora('compiling dll...').start();
+    const spinnerDll = ora('compiling dll...').start();
     webpack(dllConfig, (err, stats) => {
       if (err || stats.hasErrors()) {
         console.error(err);
-        spinner_dll.fail();
+        spinnerDll.fail();
         process.exit(1);
       }
       // 成功执行完构建
-      spinner_dll.succeed();
+      spinnerDll.succeed();
       resolve(true);
     });
   });

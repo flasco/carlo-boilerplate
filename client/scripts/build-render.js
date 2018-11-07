@@ -1,13 +1,12 @@
 const parseArgs = require('minimist');
 const ora = require('ora');
 const webpack = require('webpack');
-const config_prod = require('../config/webpack.prod');
-const config_dev = require('../config/webpack.dev');
+const configProd = require('../config/webpack.prod');
+const configDev = require('../config/webpack.dev');
 const { checkMainfest, dllComplier } = require('./util');
 
 const argv = parseArgs(process.argv.splice(2), {
-  boolean: ["re-dll"],
-  boolean: ['dev']
+  boolean: ['re-dll', 'dev'],
 });
 
 async function start() {
@@ -15,7 +14,7 @@ async function start() {
     await dllComplier();
   }
   const spinner = ora('compiling app...').start();
-  const config = argv['dev'] ? config_dev : config_prod;
+  const config = argv.dev ? configDev : configProd;
   webpack(config, (err, stats) => {
     if (err || stats.hasErrors()) {
       // 构建过程出错

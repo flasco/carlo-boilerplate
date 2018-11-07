@@ -1,23 +1,26 @@
 {
-  "name": "electron-boilerplate",
+  "name": "cqHack-app",
   "version": "1.0.0",
   "main": "main.js",
   "author": "flasco",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=dev node main.js",
-    "dev:render": "node scripts/dev-koa.js",
-    "build:render": "node scripts/build-render.js",
-    "pre": "yarn build:render"
+    "start": "cross-env NODE_ENV=dev node app/main.js",
+    "dev:render": "cd client && yarn dev:render",
+    "build:render": "cd client && yarn build:render",
+    "build": "pkg . -t macos --output build/cqHack-app"
+  },
+  "bin": {
+    "cqHack-app": "./app/main.js"
+  },
+  "pkg": {
+    "scripts": "app/**/*.js",
+    "assets": "static/**/*"
   },
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint",
-      "git add"
-    ],
-    "*.{css,scss}": [
-      "stylelint",
       "git add"
     ]
   },
@@ -27,59 +30,23 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "babel-loader": "8",
-    "babel-plugin-zent": "^1.2.1",
-    "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
     "eslint": "^5.8.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-google": "^0.11.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-lean-imports": "^0.3.3",
     "eslint-plugin-react": "^7.11.1",
-    "file-loader": "^2.0.0",
     "husky": "^1.1.2",
-    "is-electron-renderer": "^2.0.1",
-    "koa": "^2.6.1",
-    "koa-webpack": "^5.1.1",
-    "koa2-cors": "^2.0.6",
     "lint-staged": "^7.3.0",
-    "mini-css-extract-plugin": "^0.4.4",
-    "minimist": "^1.2.0",
-    "node-sass": "^4.9.4",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "ora": "^3.0.0",
+    "pkg": "^4.3.4",
     "prettier-eslint": "^8.8.2",
     "prettier-stylelint": "^0.4.2",
-    "react-hot-loader": "^4.3.12",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-processor-html": "^1.0.0",
-    "terser-webpack-plugin": "^1.1.0",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-merge": "^4.1.4",
-    "webpack-target-electron-renderer": "^0.4.0"
+    "stylelint-processor-arbitrary-tags": "^0.1.0"
   },
   "dependencies": {
-    "carlo": "^0.9.11",
-    "dva-core": "^1.4.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-redux": "^5.1.0",
-    "react-router-dom": "^4.3.1",
-    "zent": "^6.4.1"
+    "carlo": "^0.9.11"
   }
 }

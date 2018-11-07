@@ -1,9 +1,9 @@
-const koa = require('koa');
+const Koa = require('koa');
 const koaWebpack = require('koa-webpack');
 const cors = require('koa2-cors');
 const config = require('../config/webpack.dev');
 
-const app = new koa();
+const app = new Koa();
 
 koaWebpack({
   config

@@ -2,3 +2,6 @@
 /static/dist
 *.log
 /.profile
+/client/node_modules
+/build
+*.log

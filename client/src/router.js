@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 
-const Home = SuspenseContainer(lazy(() => import('./pages/home')));
+const Home = suspenseContainer(lazy(() => import('./pages/home')));
 
-const Page2 = SuspenseContainer(lazy(() => import('./pages/page2')));
+const Page2 = suspenseContainer(lazy(() => import('./pages/page2')));
 
-function SuspenseContainer(Component) {
-  return props => (
+function suspenseContainer(Component) {
+  return (props) => (
     <Suspense fallback={<div>Loading...</div>}>
       <Component {...props} />
     </Suspense>

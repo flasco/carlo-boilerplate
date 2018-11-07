@@ -1,7 +1,7 @@
 const carlo = require('carlo');
 const path = require('path');
 
-const TestControl = require('./src/main');
+const TestControl = require('./test-control');
 
 (async () => {
   const app = await carlo.launch(
@@ -14,7 +14,7 @@ const TestControl = require('./src/main');
 
   app.on('exit', () => process.exit());
 
-  app.serveFolder(path.resolve(__dirname, './static'));
+  app.serveFolder(path.resolve(__dirname, '../static'));
 
   const control = new TestControl();
 

@@ -33,10 +33,9 @@ class Page2 extends React.PureComponent {
 }
 
 function select(state) {
-  console.log(state);
   if (state == null) return {};
   return {
-    cnt: state.app.cnt
+    cnt: state.app.cnt,
   };
 }
 

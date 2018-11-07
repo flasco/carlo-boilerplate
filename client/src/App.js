@@ -8,8 +8,9 @@ const app = dva({
   initialState: {},
   models: [appModel],
   onError(e) {
+    // eslint-disable-next-line no-console
     console.log('onError', e);
-  }
+  },
 });
 
 const App = hot(module)(app.start(Routes));
