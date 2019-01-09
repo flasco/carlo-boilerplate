@@ -612,7 +612,7 @@ capture-stack-trace@^1.0.0:
   resolved "http://registry.npm.taobao.org/capture-stack-trace/download/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha1-psC74fOPOqC5Ijjstv9Cw0TUE10=
 
-carlo@^0.9.11:
+carlo@0.9.11:
   version "0.9.11"
   resolved "http://registry.npm.taobao.org/carlo/download/carlo-0.9.11.tgz#82e89381cd2f9d24de063cc1de84f79778f06094"
   integrity sha1-guiTgc0vnSTeBjzB3oT3l3jwYJQ=

@@ -18,7 +18,7 @@ const TestControl = require('./test-control');
 
   const control = new TestControl();
 
-  await app.exposeObject('control', control);
+  await app.exposeFunction('_control', (str) => control.test(str));
 
   await app.exposeFunction('_envFunc', () => process.env);
 

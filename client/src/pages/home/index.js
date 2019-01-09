@@ -3,8 +3,6 @@ import { Button, Notify } from 'zent';
 import './index.scss';
 import ico from '../../../../static/app.ico';
 
-const { rpc } = window;
-
 class Home extends React.PureComponent {
   control = null;
 
@@ -14,8 +12,7 @@ class Home extends React.PureComponent {
   };
 
   testLink = async () => {
-    if (this.control == null) this.control = await rpc.lookup('control');
-    Notify.success(await this.control.test('666'));
+    Notify.success(await window._control('123'));
   }
 
   render() {
