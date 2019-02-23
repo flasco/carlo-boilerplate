@@ -612,11 +612,12 @@ capture-stack-trace@^1.0.0:
   resolved "http://registry.npm.taobao.org/capture-stack-trace/download/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha1-psC74fOPOqC5Ijjstv9Cw0TUE10=
 
-carlo@0.9.11:
-  version "0.9.11"
-  resolved "http://registry.npm.taobao.org/carlo/download/carlo-0.9.11.tgz#82e89381cd2f9d24de063cc1de84f79778f06094"
-  integrity sha1-guiTgc0vnSTeBjzB3oT3l3jwYJQ=
+carlo@^0.9.43:
+  version "0.9.43"
+  resolved "http://registry.npm.taobao.org/carlo/download/carlo-0.9.43.tgz#e0ca81832c6b24ffcb65170dd82181d841a9ce59"
+  integrity sha1-4MqBgyxrJP/LZRcN2CGB2EGpzlk=
   dependencies:
+    debug "^4.1.0"
     puppeteer-core "^1.9.0"
 
 caseless@~0.12.0:
@@ -953,6 +954,13 @@ debug@^4.0.0, debug@^4.0.1:
   version "4.1.0"
   resolved "http://registry.npm.taobao.org/debug/download/debug-4.1.0.tgz#373687bffa678b38b1cd91f861b63850035ddc87"
   integrity sha1-NzaHv/pnizixzZH4YbY4UANd3Ic=
+  dependencies:
+    ms "^2.1.1"
+
+debug@^4.1.0:
+  version "4.1.1"
+  resolved "http://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
   dependencies:
     ms "^2.1.1"
 

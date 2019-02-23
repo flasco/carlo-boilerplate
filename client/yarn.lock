@@ -659,6 +659,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.3.1":
+  version "7.3.1"
+  resolved "http://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
+  integrity sha1-V0sD6OipiY6vSocqkuogt4Rvbyo=
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2":
   version "7.1.2"
   resolved "http://registry.npm.taobao.org/@babel/template/download/@babel/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
@@ -3205,6 +3212,13 @@ hoist-non-react-statics@^3.0.0:
   dependencies:
     react-is "^16.3.2"
 
+hoist-non-react-statics@^3.3.0:
+  version "3.3.0"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  integrity sha1-sJF48BIhhPuVrPUl2q7LTY9FlYs=
+  dependencies:
+    react-is "^16.7.0"
+
 hosted-git-info@^2.1.4:
   version "2.7.1"
   resolved "http://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
@@ -5558,6 +5572,15 @@ prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.7.2:
+  version "15.7.2"
+  resolved "http://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
+
 proxy-addr@~2.0.4:
   version "2.0.4"
   resolved "http://registry.npm.taobao.org/proxy-addr/download/proxy-addr-2.0.4.tgz#ecfc733bf22ff8c6f407fa275327b9ab67e48b93"
@@ -5735,15 +5758,15 @@ react-beautiful-dnd@6.0.1:
     redux-thunk "^2.2.0"
     reselect "^3.0.1"
 
-react-dom@^16.6.0:
-  version "16.6.1"
-  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-16.6.1.tgz#5476e08694ae504ae385a28b62ecc4fe3a29add9"
-  integrity sha1-VHbghpSuUErjhaKLYuzE/joprdk=
+react-dom@^16.8.3:
+  version "16.8.3"
+  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-16.8.3.tgz#ae236029e66210783ac81999d3015dfc475b9c32"
+  integrity sha1-riNgKeZiEHg6yBmZ0wFd/EdbnDI=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.11.0"
+    scheduler "^0.13.3"
 
 react-hot-loader@^4.6.3:
   version "4.6.3"
@@ -5765,6 +5788,11 @@ react-is@^16.3.2, react-is@^16.6.0:
   resolved "http://registry.npm.taobao.org/react-is/download/react-is-16.6.1.tgz#f77b1c3d901be300abe8d58645b7a59e794e5982"
   integrity sha1-93scPZAb4wCr6NWGRbelnnlOWYI=
 
+react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2:
+  version "16.8.3"
+  resolved "http://registry.npm.taobao.org/react-is/download/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
+  integrity sha1-StiwKcKnGPwM/HRsjU4bciHlOH0=
+
 react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -5779,7 +5807,7 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
-react-redux@^5.0.6, react-redux@^5.1.0:
+react-redux@^5.0.6:
   version "5.1.0"
   resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-5.1.0.tgz#948b1e2686473d1999092bcfb32d0dc43d33f667"
   integrity sha1-lIseJoZHPRmZCSvPsy0NxD0z9mc=
@@ -5791,6 +5819,18 @@ react-redux@^5.0.6, react-redux@^5.1.0:
     prop-types "^15.6.1"
     react-is "^16.6.0"
     react-lifecycles-compat "^3.0.0"
+
+react-redux@^6.0.1:
+  version "6.0.1"
+  resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-6.0.1.tgz#0d423e2c1cb10ada87293d47e7de7c329623ba4d"
+  integrity sha1-DUI+LByxCtqHKT1H5958MpYjuk0=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.2"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -5827,15 +5867,15 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.6.0:
-  version "16.6.1"
-  resolved "http://registry.npm.taobao.org/react/download/react-16.6.1.tgz#ee2aef4f0a09e494594882029821049772f915fe"
-  integrity sha1-7irvTwoJ5JRZSIICmCEEl3L5Ff4=
+react@^16.8.3:
+  version "16.8.3"
+  resolved "http://registry.npm.taobao.org/react/download/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
+  integrity sha1-xvmIos6JU3XeIW7c+u3WuadkUdk=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.11.0"
+    scheduler "^0.13.3"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -6187,10 +6227,10 @@ sax@^1.2.4, sax@~1.2.4:
   resolved "http://registry.npm.taobao.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
 
-scheduler@^0.11.0:
-  version "0.11.0"
-  resolved "http://registry.npm.taobao.org/scheduler/download/scheduler-0.11.0.tgz#def1f1bfa6550cc57981a87106e65e8aea41a6b5"
-  integrity sha1-3vHxv6ZVDMV5gahxBuZeiupBprU=
+scheduler@^0.13.3:
+  version "0.13.3"
+  resolved "http://registry.npm.taobao.org/scheduler/download/scheduler-0.13.3.tgz#bed3c5850f62ea9c716a4d781f9daeb9b2a58896"
+  integrity sha1-vtPFhQ9i6pxxak14H52uubKliJY=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7506,10 +7546,10 @@ zan-utils@^1.2.8:
     url-parse "^1.1.9"
     zan-jquery "^1.0.2"
 
-zent@^6.4.1:
-  version "6.5.0"
-  resolved "http://registry.npm.taobao.org/zent/download/zent-6.5.0.tgz#b9f360fa39f3a6755e25c5b57ab5263ded566ed4"
-  integrity sha1-ufNg+jnzpnVeJcW1erUmPe1WbtQ=
+zent@^6.6.1:
+  version "6.6.1"
+  resolved "http://registry.npm.taobao.org/zent/download/zent-6.6.1.tgz#ff5722e777c109d658264d18515458182d1baf4a"
+  integrity sha1-/1ci53fBCdZYJk0YUVRYGC0br0o=
   dependencies:
     autosize "^4.0.0"
     babel-runtime "^6.23.0"
@@ -7522,14 +7562,15 @@ zent@^6.4.1:
     prop-types "^15.6.1"
     raf "^3.3.2"
     react-beautiful-dnd "6.0.1"
+    react-is "^16.6.3"
     react-transition-group "^2.2.1"
     sortablejs "^1.7.0"
     tinycolor2 "^1.4.1"
     uuid "^3.1.0"
     zan-utils "^1.2.8"
-    zenticons "1.4.0"
+    zenticons "1.4.1"
 
-zenticons@1.4.0:
-  version "1.4.0"
-  resolved "http://registry.npm.taobao.org/zenticons/download/zenticons-1.4.0.tgz#56de281f2da20a943ab02b50fe35d174a89b9688"
-  integrity sha1-Vt4oHy2iCpQ6sCtQ/jXRdKiblog=
+zenticons@1.4.1:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/zenticons/download/zenticons-1.4.1.tgz#3cd322b2c210283def0178721b66e1d970dbf01b"
+  integrity sha1-PNMissIQKD3vAXhyG2bh2XDb8Bs=

@@ -47,6 +47,6 @@
     "stylelint-processor-arbitrary-tags": "^0.1.0"
   },
   "dependencies": {
-    "carlo": "0.9.11"
+    "carlo": "^0.9.43"
   }
 }

@@ -13,16 +13,17 @@ class Home extends React.PureComponent {
 
   testLink = async () => {
     Notify.success(await window._control('123'));
-  }
+  };
 
   render() {
     return (
-      <React.Fragment>
+      <div style={{ padding: 20 }}>
         <div className="test">hello carlo!</div>
         <img src={ico} alt="test" />
-        <Button onClick={this.onJmpTst}>42566</Button>
-        <Button onClick={this.testLink}>测试！</Button>
-      </React.Fragment>
+        <br />
+        <Button onClick={this.onJmpTst}>跳转</Button>
+        <Button onClick={this.testLink}>测试</Button>
+      </div>
     );
   }
 }
