@@ -1,3 +1,5 @@
+import { hot } from 'react-hot-loader/root';
+
 import Routes from './router';
 import dva from './utils/dva';
 
@@ -14,4 +16,4 @@ const app = dva({
 
 const App = app.start(Routes);
 
-export default App;
+export default hot(App);

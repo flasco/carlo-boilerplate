@@ -12,35 +12,38 @@ module.exports = merge.smart(baseConfig, {
       {
         test: /\.js?$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true,
-            plugins: [
-              [
-                require.resolve('babel-plugin-zent'),
-                {
-                  automaticStyleImport: true
-                }
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true,
+              plugins: [
+                [
+                  require.resolve('babel-plugin-zent'),
+                  {
+                    automaticStyleImport: true,
+                  },
+                ],
+                'react-hot-loader/babel',
               ],
-              'react-hot-loader/babel'
-            ]
-          }
-        }
+            },
+          },
+          'react-hot-loader/webpack',
+        ],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
   output: {
     path: path.join(__dirname, STATIC_PATH),
     filename: 'js/bundle.js',
-    publicPath: 'http://localhost:8207/'
-  }
+    publicPath: 'http://localhost:8207/',
+  },
 });
