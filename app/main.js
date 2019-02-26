@@ -1,7 +1,7 @@
 const carlo = require('carlo');
 const path = require('path');
 
-const TestControl = require('./test-control');
+const mountModule = require('./src');
 
 (async () => {
   const app = await carlo.launch(
@@ -16,11 +16,8 @@ const TestControl = require('./test-control');
 
   app.serveFolder(path.resolve(__dirname, '../static'));
 
-  const control = new TestControl();
-
-  await app.exposeFunction('_control', (str) => control.test(str));
-
-  await app.exposeFunction('_envFunc', () => process.env);
+  // 挂载模块
+  await mountModule(app);
 
   await app.load('index.html');
 })();

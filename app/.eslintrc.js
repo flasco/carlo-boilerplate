@@ -13,6 +13,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     'no-console': 0,
+    'require-jsdoc': 0,
     semi: ['error', 'always'],
   },
 };
