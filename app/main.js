@@ -2,15 +2,15 @@ const carlo = require('carlo');
 const path = require('path');
 
 const mountModule = require('./src');
+const appPath = path.resolve(__dirname, '../static/app.png');
 
 (async () => {
-  const app = await carlo.launch(
-    {
-      width: 800,
-      height: 600,
-      args: process.env.DEV === 'true' ? ['--auto-open-devtools-for-tabs'] : [],
-    }
-  );
+  const app = await carlo.launch({
+    width: 560,
+    height: 330,
+    icon: appPath,
+    args: [],
+  });
 
   app.on('exit', () => process.exit());
 
@@ -21,3 +21,11 @@ const mountModule = require('./src');
 
   await app.load('index.html');
 })();
+
+// const log = console.log;
+// console.log = (...args) => {
+//   log(123);
+//   log(...args);
+// };
+
+// console.log('123123123123');

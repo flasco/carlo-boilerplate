@@ -1248,6 +1248,11 @@ eslint-plugin-lean-imports@^0.3.3:
   resolved "http://registry.npm.taobao.org/eslint-plugin-lean-imports/download/eslint-plugin-lean-imports-0.3.3.tgz#acb835d23801d92d2ce119b752b97c953f96d865"
   integrity sha1-rLg10jgB2S0s4Rm3Url8lT+W2GU=
 
+eslint-plugin-react-hooks@^1.3.0:
+  version "1.3.0"
+  resolved "http://registry.npm.taobao.org/eslint-plugin-react-hooks/download/eslint-plugin-react-hooks-1.3.0.tgz#d73f1a61d8dd6a14f15159ab1c6e8e3aeabb6da8"
+  integrity sha1-1z8aYdjdahTxUVmrHG6OOuq7bag=
+
 eslint-plugin-react@^7.11.1:
   version "7.11.1"
   resolved "http://registry.npm.taobao.org/eslint-plugin-react/download/eslint-plugin-react-7.11.1.tgz#c01a7af6f17519457d6116aa94fc6d2ccad5443c"

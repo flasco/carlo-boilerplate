@@ -3,7 +3,7 @@ import { Button } from 'zent';
 import { connect } from '../../utils/dva';
 import { createAction } from '../../utils';
 import './index.scss';
-import ico from '../../../../static/app.ico';
+import ico from '../../../../static/app.png';
 
 // const { ipcRenderer } = require('electron');
 
@@ -23,7 +23,7 @@ class Page2 extends React.PureComponent {
     return (
       <div style={{ padding: 20 }}>
         <div className="test">{`hello carlo! cnt: ${cnt}`}</div>
-        <img src={ico} alt="test" />
+        <img src={ico} alt="test" style={{ width: 20, height: 20 }} />
         <br />
         <Button onClick={this.jmpHome}>return</Button>
         <Button onClick={this.add}>Clxick</Button>

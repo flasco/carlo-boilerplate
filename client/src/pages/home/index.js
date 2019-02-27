@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Notify } from 'zent';
 import './index.scss';
-import ico from '../../../../static/app.ico';
+import ico from '../../../../static/app.png';
 
 class Home extends React.PureComponent {
   control = null;
@@ -19,7 +19,7 @@ class Home extends React.PureComponent {
     return (
       <div style={{ padding: 20 }}>
         <div className="test">hello carlo!</div>
-        <img src={ico} alt="test" />
+        <img src={ico} alt="test" style={{ width: 20, height: 20 }} />
         <br />
         <Button onClick={this.onJmpTst}>跳转</Button>
         <Button onClick={this.testLink}>测试</Button>
