@@ -4,7 +4,6 @@ import { render } from 'react-dom';
 import App from './App';
 
 setConfig({
-  ignoreSFC: true, // RHL will be __completely__ disabled for SFC
   pureRender: true, // RHL will not change render method
 });
 

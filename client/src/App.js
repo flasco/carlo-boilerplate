@@ -5,6 +5,8 @@ import dva from './utils/dva';
 
 import appModel from './models/app';
 
+import './base.scss';
+
 const app = dva({
   initialState: {},
   models: [appModel],
