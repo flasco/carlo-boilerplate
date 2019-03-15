@@ -1,5 +1,5 @@
 ## electron boilerplate
-一个electron的react模板，现已经支持热加载。
+一个 carlo + react 的模板，现已经支持热加载。
 
 #### how to use
 ```bash
