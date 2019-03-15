@@ -22,10 +22,3 @@ const appPath = path.resolve(__dirname, '../static/app.png');
   await app.load('index.html');
 })();
 
-// const log = console.log;
-// console.log = (...args) => {
-//   log(123);
-//   log(...args);
-// };
-
-// console.log('123123123123');
