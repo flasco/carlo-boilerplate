@@ -1,6 +1,9 @@
 ## electron boilerplate
 一个 carlo + react 的模板，现已经支持热加载。
 
+* carlo: `0.9.43`  
+* react: `16.8.3`  
+
 #### how to use
 ```bash
 yarn install # 安装依赖
@@ -10,8 +13,8 @@ yarn start # 启动electron
 ```
 
 #### tips
-如果修改了dll内容的话记得在执行时带上`--re-dll`
-打包 `npx pkg -t macos .`
+如果修改了dll内容的话记得在执行时带上`--re-dll`  
+打包 `npx pkg -t macos .`  
 
 #### TODO
 * [x] 添加ui库
