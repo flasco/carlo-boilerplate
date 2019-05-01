@@ -13,8 +13,9 @@ module.exports = merge.smart(baseConfig, {
   mode: 'production',
   entry: [path.resolve(__dirname, MAIN_JS)],
   plugins: [
-    new CleanWebpackPlugin(['css/*.*', 'js/*.*'], {
+    new CleanWebpackPlugin({
       verbose: false,
+      cleanOnceBeforeBuildPatterns: ['css/*.*', 'js/*.*'],
       root: path.resolve(__dirname, STATIC_PATH)
     }),
     new MiniCssExtractPlugin({
