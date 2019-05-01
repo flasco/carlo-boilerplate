@@ -4716,11 +4716,6 @@ specificity@^0.4.1:
   resolved "https://registry.npm.taobao.org/specificity/download/specificity-0.4.1.tgz#aab5e645012db08ba182e151165738d00887b019"
   integrity sha1-qrXmRQEtsIuhguFRFlc40AiHsBk=
 
-split-lines@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/split-lines/download/split-lines-1.1.0.tgz#3abba8f598614142f9db8d27ab6ab875662a1e09"
-  integrity sha1-Oruo9ZhhQUL5240nq2q4dWYqHgk=
-
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/split-string/download/split-string-3.1.0.tgz#7cb09dda3a86585705c64b39a6466038682e8fe2"
@@ -4902,20 +4897,19 @@ stylelint-config-recommended@^2.2.0:
   resolved "https://registry.npm.taobao.org/stylelint-config-recommended/download/stylelint-config-recommended-2.2.0.tgz#46ab139db4a0e7151fd5f94af155512886c96d3f"
   integrity sha1-RqsTnbSg5xUf1flK8VVRKIbJbT8=
 
-stylelint-config-standard@^18.2.0:
-  version "18.3.0"
-  resolved "https://registry.npm.taobao.org/stylelint-config-standard/download/stylelint-config-standard-18.3.0.tgz#a2a1b788d2cf876c013feaff8ae276117a1befa7"
-  integrity sha1-oqG3iNLPh2wBP+r/iuJ2EXob76c=
-  dependencies:
-    stylelint-config-recommended "^2.2.0"
+stylelint-config-styled-components@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/stylelint-config-styled-components/download/stylelint-config-styled-components-0.1.1.tgz#b408388d7c687833ab4be4c4e6522d97d2827ede"
+  integrity sha1-tAg4jXxoeDOrS+TE5lItl9KCft4=
 
-stylelint-processor-arbitrary-tags@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npm.taobao.org/stylelint-processor-arbitrary-tags/download/stylelint-processor-arbitrary-tags-0.1.0.tgz#74f67a55583197eca2c1f0e1a0c0940be88352d9"
-  integrity sha1-dPZ6VVgxl+yiwfDhoMCUC+iDUtk=
+stylelint-processor-styled-components@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/stylelint-processor-styled-components/download/stylelint-processor-styled-components-1.6.0.tgz#26e4317cd4ba1c3196bd6d832e8fcba3f159dd9d"
+  integrity sha1-JuQxfNS6HDGWvW2DLo/Lo/FZ3Z0=
   dependencies:
-    execall "^1.0.0"
-    split-lines "^1.1.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    postcss "^7.0.0"
 
 stylelint@^8.1.1:
   version "8.4.0"
